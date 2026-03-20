@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seescape | Experience True Psychological Terror</title>
+    <link rel="stylesheet" href="Sees.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<div class="vignette"></div>
+
+<nav class="navbar">
+    <div class="nav-container">
+        <div class="logo">SEESCAPE</div>
+        <div class="nav-links">
+            <a href="#about">The Fear</a>
+            <a href="#features">Threats</a>
+            <a href="#modes">Modes</a>
+            <a href="#download" class="nav-btn">Play Now</a>
+        </div>
+    </div>
+</nav>
+
+<header class="hero">
+    <div class="hero-content">
+        <span class="eyebrow">A Psychological Horror Experience</span>
+        <h1>SEESCAPE</h1>
+        <p>The dark is not empty. Cooperation is your only hope, but sound is your greatest enemy. Fear is the only constant.</p>
+        <div class="hero-btns">
+            <a href="#download" class="btn-primary">Download Free</a>
+            <a href="#about" class="btn-secondary">Feel the Panic</a>
+        </div>
+    </div>
+</header>
+
+<main>
+    <section id="about" class="fade-in">
+        <div class="section-header">
+            <h2>The Darkness Awaits</h2>
+            <p>Work together using strategy, but know that *It* reacts to your noise. Pure survival, redefined.</p>
+        </div>
+        <div class="image-placeholder main-art">
+            <span>[ Placeholder: Cinematic Concept Art ]</span>
+        </div>
+    </section>
+
+    <section id="features" class="features-grid">
+        <div class="card threat-card">
+            <div class="card-icon">💀</div> 
+            <h3>Paralyzing Fear</h3>
+            <p>Claustrophobic environments, erratic light sources, and sudden, visceral attacks create overwhelming psychological tension. Don't just survive; *endure*.</p>
+        </div>
+        
+        <div class="card">
+            <div class="card-icon">👥</div>
+            <h3>Asymmetric Dread</h3>
+            <p>Master unique roles. Outsmart the terrifying monster or hunt the increasingly frantic survivors.</p>
+        </div>
+        
+        <div class="card">
+            <div class="card-icon">🤝</div>
+            <h3>True Cooperation</h3>
+            <p>Communication is survival. Coordinating in silence is key; every whisper might be your last.</p>
+        </div>
+    </section>
+
+    <section id="modes" class="modes-section">
+        <h2>Choose Your Doom</h2>
+        <div class="grid">
+            <div class="mode-card survival">
+                <h3>Survival</h3>
+                <p>Evade the manifestation of nightmare until dawn.</p>
+            </div>
+            <div class="mode-card zombie">
+                <h3>Zombie</h3>
+                <p>The fallen join the hunt. The infected hunt their allies.</p>
+            </div>
+            <div class="mode-card escape">
+                <h3>Escape</h3>
+                <p>Repair, react, and run. Failure is not an option.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="download" class="download-section">
+        <h2>Enter the Arena (If You Dare)</h2>
+        <div class="download-container">
+            <div class="dl-box">
+                <img src="images/url_qrcodecreator.com_11_10_27.png" alt="Windows QR">
+                <a href="#" class="download-btn windows">Download for Windows</a>
+            </div>
+            <div class="dl-box">
+                <img src="images/download linux.png" alt="Linux QR">
+                <a href="#" class="download-btn linux">Download for Linux</a>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer>
+    <div class="footer-content">
+        <p>&copy; 2026 Seescape Studio. Survival is Optional.</p>
+        <div class="footer-links">
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms of Service</a>
+        </div>
+    </div>
+</footer>
+
+<div id="cookie-banner" class="cookie-banner">
+    <p>Cookies improve your survival experience. We use them for tracking (your movement). <button onclick="acceptCookies()">Accept</button></p>
+</div>
+
+<script>
+    function acceptCookies() {
+        document.getElementById("cookie-banner").style.display = "none";
+        localStorage.setItem("cookieConsent", "true");
+    }
+    window.onload = function() {
+        if(localStorage.getItem("cookieConsent")) {
+            document.getElementById("cookie-banner").style.display = "none";
+        }
+    }
+</script>
+
+</body>
+</html>
